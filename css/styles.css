@@ -24,12 +24,12 @@ body {
     flex-direction: row;
 }
 .header-list {
-display: flex;
-justify-content: space-around;
-align-items: center;
+display: inline-flex;
+gap: 40px;
 }
 .header-list-item {
-    padding: 24px 0;
+    display: inline-flex;
+    gap: 40px;
 }
 .page-nav {
     font-weight: 500;
@@ -140,6 +140,22 @@ h2 {
         text-transform: capitalize;
         color: #2e2f42;
 }
+.team-card {
+    text-align: center;
+}
+.team-member-list {
+    padding-top: 120px;
+        padding-bottom: 120px;
+        align-items: center;
+        gap: 24px;
+}
+.team-member-container {
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-top: 232px;
+    padding-bottom: 120px;
+    gap: 24px;
+}
 h3 {
     font-weight: 500;
         font-size: 20px;
@@ -168,6 +184,8 @@ h3 {
 }
 a {
     text-decoration: none;
+    display: flex;
+        flex-direction: row;
 }
 ul {
     list-style: none;
