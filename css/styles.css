@@ -37,13 +37,13 @@ margin-right: 76px; }
 }
 .container-header {
     display: flex;
-        flex-direction: column;
         max-width: 1158px;
         margin: 0 auto;
         padding-top: 32px;
         padding-bottom: 32px;
         padding-left: 15px;
             padding-right: 15px;
+            justify-content: space-between;
 }
 .header-list {
 display: flex;
@@ -208,7 +208,7 @@ h2 {
 .team-members {
     margin-bottom: 72px;
 }
-.team-member-list {
+.team-members-list {
     display: flex;
     gap: 24px;
 }
@@ -220,7 +220,7 @@ h2 {
 .team-members-item:last-child {
     margin-right: 0;
 }
-.team-member-container {
+.team-members-container {
     padding-top: 32px;
     padding-bottom: 32px;
 }
