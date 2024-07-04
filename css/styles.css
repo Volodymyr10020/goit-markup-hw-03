@@ -6,6 +6,14 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1158px;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 img {
     display: block;
 }
@@ -30,6 +38,12 @@ margin-right: 76px; }
     width: 1158px;
     margin: 0;
 }
+.container-header {
+    width: 1158px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .header-list {
 display: flex;
 gap: 40px;
@@ -48,6 +62,8 @@ padding-bottom: 24px;
     color: #2e2f42;
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .link {
     font-style: normal;
@@ -95,7 +111,7 @@ padding-bottom: 24px;
         color: #fff;
         background-color: #2e2f42;
         padding-top: 188px;
-        padding-bottom: 48px;
+        padding-bottom: 188px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -149,10 +165,6 @@ font-weight: 700;
         align-items: center;
         gap: 24px;
 }
-
-.advanteges-list-item:first-child {
-    width: calc((100% - 72px) / 4);
-}
 .names {
     margin-bottom: 8px;
 }
@@ -187,6 +199,7 @@ h2 {
     margin-bottom: 72px;
 }
 .team-member-list {
+    display: flex;
         align-items: center;
         gap: 24px;
 }
@@ -199,6 +212,9 @@ h2 {
     padding-top: 232px;
     padding-bottom: 120px;
     gap: 24px;
+    flex-basis: calc((100% -72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 24px;
 }
 h3 {
     font-weight: 500;
@@ -208,6 +224,11 @@ h3 {
         color: #2e2f42;
         text-transform: capitalize;
 }
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 72px;
+}
 .service-titles {
         font-weight: 700;
         font-size: 36px;
@@ -216,7 +237,6 @@ h3 {
         text-align: center;
         text-transform: capitalize;
         color: #2e2f42;
-        margin-bottom: 72px;
         padding-top: 120px;
         padding-bottom: 120px;
         margin-bottom: 8px;
@@ -231,13 +251,18 @@ h3 {
     .service-name-container {
         padding: 32px 16px;
         border: 1px solid #e7e9fc;
+        border-top: none;
+        margin-bottom: 8px;
+    }
+    .service-title-item {
+        width: calc((100% - 48px) / 3);
     }
 .link-name-bottom {
     color: #f4f4fd;
 }
 a {
     text-decoration: none;
-    display: flex;
+    display: inline-block;
         flex-direction: row;
 }
 ul {
@@ -245,17 +270,11 @@ ul {
     display: flex;
         flex-direction: row;
 }
-.container {
-display: flex;
-flex-direction: column;
-max-width: 1158px;
-margin: 0;
-padding-top: 32px;
-padding-bottom: 32px;
-}
-.page-footer .logo-bottom {
-    display: inline-block;
-    margin-bottom: 16px;
+.page-footer {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.logo-bottom {
+    display: inline-block;
+    margin-right: 16px;
 }
