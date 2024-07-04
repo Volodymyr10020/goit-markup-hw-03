@@ -280,6 +280,6 @@ ul, ol {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo-bottom {
+.logo-bottom .link-name-bottom{
     display: inline-block;
 }
