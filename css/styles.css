@@ -13,6 +13,8 @@ body {
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 img {
     display: block;
@@ -31,20 +33,21 @@ margin-right: 76px; }
         }
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding: 24px 0;
     background-color: #fff;
     display: flex;
     flex-direction: row;
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
 }
 .container-header {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: space-between;
+        flex-direction: column;
+        max-width: 1158px;
+        margin: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
 }
 .header-list {
 display: flex;
@@ -73,8 +76,6 @@ padding-top: 24px;
         letter-spacing: 0.02em;
         line-height: 1.5;
         color: #2e2f42;
-        padding-top: 24px;
-        padding-bottom: 24px;
 }
 .page-nav .link {
     color: #2e2f42;
@@ -210,21 +211,19 @@ h2 {
 }
 .team-member-list {
     display: flex;
-        gap: 24px;
+    gap: 24px;
 }
 .team-members-item {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    margin-right: 24px;
+}
+.team-members-item:last-child {
+    margin-right: 0;
 }
 .team-member-container {
-    padding-left: 156px;
-    padding-right: 156px;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 24px;
-    flex-basis: calc((100% -72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    margin-right: 24px;
 }
 h3 {
     font-weight: 500;
@@ -233,6 +232,7 @@ h3 {
         letter-spacing: 0.02em;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 8px;
 }
 .services {
     padding-top: 120px;
@@ -249,7 +249,7 @@ h3 {
         color: #2e2f42;
         padding-top: 120px;
         padding-bottom: 120px;
-        margin-bottom: 8px;
+        margin-bottom: 72px;
     }
     .service-titles-list {
         display: flex;
@@ -288,4 +288,8 @@ ul, ol {
     padding-bottom: 100px;
     display: inline-block;
     margin-right: 16px;
+}
+.logo-bottom {
+    display: inline-block;
+        margin-right: 16px;
 }
