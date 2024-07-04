@@ -27,14 +27,17 @@ margin-right: 76px; }
     background-color: #fff;
     display: flex;
     flex-direction: row;
+    width: 1158px;
+    margin: 0;
 }
 .header-list {
-display: inline-flex;
+display: flex;
 gap: 40px;
-padding: 24px 0 24px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .header-list-item {
-    display: inline-flex;
+    display: flex;
     gap: 40px;
 }
 .page-nav {
@@ -69,9 +72,6 @@ padding: 24px 0 24px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: #434455;
-}
-.address {
-    display: flex;
 }
 
 .address .link:hover,
@@ -138,14 +138,23 @@ font-weight: 700;
     text-transform: uppercase;
     color: #4d5ae5;
 }
+
+.advanteges {
+    padding-top: 120px;
+        padding-bottom: 120px;
+}
 .advanteges-list {
     padding-top: 120px;
         padding-bottom: 120px;
         align-items: center;
+        gap: 24px;
 }
-.advanteges-list-item {
-    max-width: 264px;
-    margin: 24px;
+
+.advanteges-list-item:first-child {
+    width: calc((100% - 72px) / 4);
+}
+.names {
+    margin-bottom: 8px;
 }
 h2 {
     font-weight: 700;
@@ -156,14 +165,33 @@ h2 {
         text-transform: capitalize;
         color: #2e2f42;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .team-card {
     text-align: center;
-}
-.team-member-list {
     padding-top: 120px;
         padding-bottom: 120px;
+        margin-bottom: 8px;
+}
+.team-members {
+    margin-bottom: 72px;
+}
+.team-member-list {
         align-items: center;
         gap: 24px;
+}
+.team-members-item {
+    margin-right: 24px;
 }
 .team-member-container {
     padding-left: 156px;
@@ -189,11 +217,20 @@ h3 {
         text-transform: capitalize;
         color: #2e2f42;
         margin-bottom: 72px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-bottom: 8px;
     }
     .service-titles-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+    .service-name-container {
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
     }
 .link-name-bottom {
     color: #f4f4fd;
@@ -213,10 +250,12 @@ display: flex;
 flex-direction: column;
 max-width: 1158px;
 margin: 0;
-padding: 0 15px 0 15px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 .page-footer .logo-bottom {
     display: inline-block;
     margin-bottom: 16px;
-    padding: 100px 0 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
