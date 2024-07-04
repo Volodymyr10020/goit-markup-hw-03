@@ -11,10 +11,8 @@ body {
     flex-direction: column;
     max-width: 1158px;
     margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
     padding-left: 15px;
-        padding-right: 15px;
+    padding-right: 15px;
 }
 img {
     display: block;
@@ -39,11 +37,6 @@ margin-right: 76px; }
     display: flex;
         max-width: 1158px;
         margin: 0 auto;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        padding-left: 15px;
-            padding-right: 15px;
-            justify-content: space-between;
 }
 .header-list {
 display: flex;
@@ -158,7 +151,7 @@ font-weight: 700;
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
-        margin-right: 16px;
+    margin-bottom: 16px;
 }
 
 .advanteges {
