@@ -14,7 +14,7 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 15px;
-    padding-right: 15px;
+        padding-right: 15px;
 }
 img {
     display: block;
@@ -47,7 +47,7 @@ margin-right: 76px; }
         padding-top: 32px;
         padding-bottom: 32px;
         padding-left: 15px;
-        padding-right: 15px;
+            padding-right: 15px;
 }
 .header-list {
 display: flex;
