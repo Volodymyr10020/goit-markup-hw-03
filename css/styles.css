@@ -41,8 +41,6 @@ margin-right: 76px; }
 .header-list {
 display: flex;
 gap: 40px;
-padding-top: 24px;
-    padding-bottom: 24px;
 }
 .header-list-item {
     display: flex;
@@ -65,6 +63,8 @@ padding-top: 24px;
         letter-spacing: 0.02em;
         line-height: 1.5;
         color: #2e2f42;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .page-nav .link {
     color: #2e2f42;
@@ -150,8 +150,8 @@ font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .advanteges {
