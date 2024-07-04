@@ -102,7 +102,10 @@ gap: 40px;
         letter-spacing: 0.02em;
         color: #ffffff;
         max-width: 496px;
-        margin: 0 auto 48px auto;
+        padding-top: 188px;
+        padding-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .main-title { font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -112,7 +115,6 @@ gap: 40px;
         letter-spacing: 0.02em;
         color: #fff;
         background-color: #2e2f42;
-        padding-top: 188px;
         padding-bottom: 188px;
     }
 
@@ -213,7 +215,6 @@ h2 {
 .team-members-item {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
-    margin-right: 24px;
 }
 .team-members-item:last-child {
     margin-right: 0;
@@ -250,13 +251,13 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-around;
         column-gap: 24px;
-        row-gap: 24px;
+        row-gap: 48px;
+        padding-bottom: 120px;
     }
     .service-name-container {
         padding: 32px 16px;
         border: 1px solid #e7e9fc;
         border-top: none;
-        margin-bottom: 8px;
     }
     .service-title-item {
         width: calc((100% - 48px) / 3);
