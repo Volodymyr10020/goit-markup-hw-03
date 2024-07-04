@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -39,16 +39,18 @@ margin-right: 76px; }
     margin: 0;
 }
 .container-header {
+    display: flex;
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: space-between;
 }
 .header-list {
 display: flex;
 gap: 40px;
 padding-top: 24px;
-padding-bottom: 24px;
+    padding-bottom: 24px;
 }
 .header-list-item {
     display: flex;
@@ -62,8 +64,6 @@ padding-bottom: 24px;
     color: #2e2f42;
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .link {
     font-style: normal;
@@ -73,6 +73,8 @@ padding-bottom: 24px;
         letter-spacing: 0.02em;
         line-height: 1.5;
         color: #2e2f42;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .page-nav .link {
     color: #2e2f42;
@@ -101,6 +103,7 @@ padding-bottom: 24px;
         letter-spacing: 0.02em;
         color: #ffffff;
         max-width: 496px;
+        margin: 0 auto 48px auto;
 }
 .main-title { font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -112,9 +115,9 @@ padding-bottom: 24px;
         background-color: #2e2f42;
         padding-top: 188px;
         padding-bottom: 188px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 48px auto;
     }
+
 .button { font-family: "Roboto", sans-serif;
     font-weight: 500;
         font-size: 16px;
@@ -128,7 +131,10 @@ padding-bottom: 24px;
     height: 56px;
     border: none;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .button:hover,
 .button:focus {
     background-color: #404BBF;
@@ -265,16 +271,17 @@ a {
     display: inline-block;
         flex-direction: row;
 }
-ul {
-    list-style: none;
+ul, ol {
+    list-style-type: none;
     display: flex;
         flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
 }
-.page-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.logo-bottom {
+.page-footer .logo-bottom{
     display: inline-block;
     margin-right: 16px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
